@@ -11,9 +11,12 @@ namespace winrt::test_component::ChainedProperties::implementation
         void Second(int32_t value);
         int32_t First();
         void First(int32_t value);
+        int32_t Other();
+        void Other(int32_t value);
 
         int32_t m_first{};
         int32_t m_second{};
+        int32_t m_other{};
     };
 }
 namespace winrt::test_component::ChainedProperties::factory_implementation

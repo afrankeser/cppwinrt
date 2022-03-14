@@ -20,4 +20,12 @@ namespace winrt::test_component::ChainedProperties::implementation
     {
         m_first = value;
     }
+    int32_t Base::Other()
+    {
+        return m_other;
+    }
+    void Base::Other(int32_t value)
+    {
+        m_other = value;
+    }
 }

@@ -330,8 +330,13 @@ namespace test_component
 
     namespace ChainedProperties
     {
+        interface INonExclusive
+        {
+            Int32 Other;
+        }
+
         [version(1)]
-        unsealed runtimeclass Base
+        unsealed runtimeclass Base : INonExclusive
         {
             Base();
 
